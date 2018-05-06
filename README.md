@@ -1,11 +1,13 @@
 # THIS IS OC PROFILE
+![logo-oc2](logo-oc2.png)
 
 ## Home
-Disini bakalan di isi sama apa yang ==OC== tawarkan dan beberapa hal yang bikin OC kece.
-Ditambah dengan foto foto saat mengajar di OC. Foto sama peserta dan pengajar.
+Disini bakalan di isi sama apa yang **OC** tawarkan dan beberapa hal yang bikin **OC** kece.
+Ditambah dengan foto foto saat mengajar di **OC**. Foto sama peserta dan pengajar.
 
 ## Profile
-Disini bakalan dikasih sejarah kecil soal ==OC==. * Siapa pengajar nya?
+Disini bakalan dikasih sejarah kecil soal **OC** . 
+* Siapa pengajar nya?
 * Sedikit sejarah nya
 * Testimoni peserta didik
 * Foto Tempat sih
