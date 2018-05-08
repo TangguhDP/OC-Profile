@@ -1,5 +1,5 @@
 # THIS IS OC PROFILE
-![logo-oc2](logo-oc2.png)
+![logo-oc2](img/logo-oc2.png)
 
 ## Home
 Disini bakalan di isi sama apa yang **OC** tawarkan dan beberapa hal yang bikin **OC** kece.
