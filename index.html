@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OC Profile</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800i" rel="stylesheet">
     <link href="fonts/Bangers-Regular.ttf" type="text/css" rel="stylesheet">
@@ -30,6 +32,9 @@
         nav {
             font-size: 20px;
             font-family: 'Bangers', cursive;
+        }
+        .row {
+            padding: 1em; 
         }
 
         #section1 {
@@ -109,19 +114,17 @@
             </div>
             <div>
                 <div class="collapse navbar-collapse" id="myNavbar">
-                    <div style="font-family: 'Bangers', cursive" ;>
                         <ul class="nav navbar-nav">
                             <li><a href="#section1">Home</a></li>
                             <li><a href="#section2">Profile</a></li>
                             <li><a href="#section3">Contact Us</a></li>
                             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Courses &amp; Testimoni <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#section41">Kursus</a></li>
+                                    <li><a href="#section41">Courses</a></li>
                                     <li><a href="#section42">Testimoni</a></li>
                                 </ul>
                             </li>
                         </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -133,6 +136,7 @@
     <div id="section1" class="container-fluid">
         <center>
             <h1>&nbsp;HOME&nbsp;</h1>
+            <p><i class="fa fa-quote-left"></i> TAGLINE <i class="fa fa-quote-right"></i></p>
         </center>
         <div class="container">
             <div id="myCarousel" class="carousel slide container" data-ride="carousel" style="position:relative;z-index:1;">
@@ -250,8 +254,26 @@
         <center>
             <h1>&nbsp;Contact Us&nbsp;</h1>
         </center>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <div class="row">
+            <div class="col-xs-4 col-lg-4">
+                <center>
+                    <span class="glyphicon glyphicon-envelope fa-3x"></span>
+                    <h3>occibinong@gmail.com</h3>
+                </center>
+            </div>
+            <div class="col-xs-4 col-lg-4">
+                <center>
+                    <span class="fa fa-facebook fa-3x"></span>
+                    <h3>Nama facebook</h3>
+                </center>
+            </div>
+            <div class="col-xs-4 col-lg-4">
+                <center>
+                    <span class="glyphicon glyphicon-earphone fa-3x"></span>
+                    <h3>No Telp</h3>
+                </center>
+            </div>
+        </div>
     </div>
     <div id="section41" class="container-fluid">
         <center>
