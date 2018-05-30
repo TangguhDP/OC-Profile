@@ -9,11 +9,19 @@ Ditambah dengan foto foto saat mengajar di **OC**. Foto sama peserta dan pengaja
 Disini bakalan dikasih sejarah kecil soal **OC** . 
 * Siapa pengajar nya?
 * Sedikit sejarah nya
-* Testimoni peserta didik
-* Foto Tempat sih
+* Foto Tempat
 
-## Contact us / Map / Mail
-Disini cukup yang sebagai berikut
-1. No WA, Line, Gmail, Facebook etc
-2. Cari tau ngaktifin maps nya gimana
-3. Cari tau gimana ngaktifin pengiriman email nya.
+## Contact Us
+Disini bakalan diisi sama yang berhubungan dengan alamat kontak sosmed dan lain lain
+
+## Courses
+Disini isinya tentang program belajar
+* TOEIC
+* TOEFL
+* ENGLISH CONVERSATION
+* ENGLISH GRAMMAR
+
+## Testimoni
+Disini isinya tentang kesan para peserta didik
+* Testimonial Quote
+* Video
