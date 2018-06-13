@@ -94,6 +94,50 @@
             background-color: rgba( 30, 26, 26, 0.325);
             border-radius: 25px;
         }
+        
+        .flip {
+            -webkit-perspective: 800;   
+            perspective: 800;
+            position: relative;
+            text-align: center;
+        }
+        .flip .card.flipped {
+            -webkit-transform: rotatey(-180deg);
+            transform: rotatey(-180deg);
+        }
+        .flip .card {
+            width: 270px;
+            height: 178px;
+            -webkit-transform-style: preserve-3d;
+            -webkit-transition: 0.5s;
+            transform-style: preserve-3d;
+            transition: 0.5s;
+            background-color: #fff;
+    
+        }
+        .flip .card .face {
+            -webkit-backface-visibility: hidden ;
+            backface-visibility: hidden ;
+            z-index: 2;
+        }
+        .flip .card .front {
+            position: absolute;
+            width: 270px;
+            z-index: 1;
+        }
+        .flip .card .img {
+            position: relaitve;
+            width: 270px;
+            height: 178px;
+            z-index: 1;
+            border: 2px solid #000;
+        }
+        .flip .card .back {
+            padding-top: 10%;
+            -webkit-transform: rotatey(-180deg);
+            transform: rotatey(-180deg);
+        }
+        .inner{margin:0px !important;}
 
     </style>
     <!-- NAVBAR INTERNAL CSS -->
@@ -117,10 +161,10 @@
                         <ul class="nav navbar-nav">
                             <li><a href="#section1">Home</a></li>
                             <li><a href="#section2">Profile</a></li>
-                            <li><a href="#section3">Contact Us</a></li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Courses &amp; Testimoni <span class="caret"></span></a>
+                            <li><a href="#section3">Courses</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact &amp; Testimoni <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#section41">Courses</a></li>
+                                    <li><a href="#section41">Contact Us</a></li>
                                     <li><a href="#section42">Testimoni</a></li>
                                 </ul>
                             </li>
@@ -227,7 +271,7 @@
             <h3>Mengapa Kursus di OC ?</h3>
             <p> Didirikan untuk mendidik generasi , Menghapus <br>stigma bahwa bahasa Inggris itu tidak lah sulit melainkan sangat <br> menyenangkan dan terlebih biaya yang sangat terjangkau.</p>
             <div id="myNavbar">
-                <a href="#section41" class="btn btn-info btn-lg">
+                <a href="#section2" class="btn btn-info btn-lg">
                     Pelajari Selengkapnya  <span class="glyphicon glyphicon-chevron-down"></span>
                 </a>
             </div>
@@ -250,13 +294,90 @@
             </div>
         </div>
     </div>
+    
     <div id="section3" class="container-fluid">
+        <center>
+            <h1>&nbsp;Courses&nbsp;</h1>
+        </center>
+        <div class="row">
+<div class="col-sm-3">
+      <div class="flip">
+        <div class="card"> 
+          <div class="face front"> 
+            <div class="inner">   
+              <img src="http://vinculumgroup.com/v2/wp-content/uploads/2015/08/nykaa.jpg">
+            </div>
+          </div> 
+          <div class="face back"> 
+            <div class="inner text-center"> 
+              <h3>Improved efficiency through automation</h3>
+              <button type="button" class="btn btn-default">Know More</button>
+            </div>
+          </div>
+        </div>	 
+      </div>
+    </div>
+  <div class="col-sm-3">
+      <div class="flip">
+        <div class="card"> 
+          <div class="face front"> 
+            <div class="inner">   
+              <img src="http://vinculumgroup.com/v2/wp-content/uploads/2015/08/nykaa.jpg">
+            </div>
+          </div> 
+          <div class="face back"> 
+            <div class="inner text-center"> 
+              <h3>Improved efficiency through automation</h3>
+              <button type="button" class="btn btn-default">Know More</button>
+            </div>
+          </div>
+        </div>	 
+      </div>
+    </div>
+  <div class="col-sm-3">
+      <div class="flip">
+        <div class="card"> 
+          <div class="face front"> 
+            <div class="inner">   
+              <img src="http://vinculumgroup.com/v2/wp-content/uploads/2015/08/nykaa.jpg">
+            </div>
+          </div> 
+          <div class="face back"> 
+            <div class="inner text-center"> 
+              <h3>Improved efficiency through automation</h3>
+              <button type="button" class="btn btn-default">Know More</button>
+            </div>
+          </div>
+        </div>	 
+      </div>
+    </div>
+  <div class="col-sm-3">
+      <div class="flip">
+        <div class="card"> 
+          <div class="face front"> 
+            <div class="inner">   
+              <img src="http://vinculumgroup.com/v2/wp-content/uploads/2015/08/nykaa.jpg">
+            </div>
+          </div> 
+          <div class="face back"> 
+            <div class="inner text-center"> 
+              <h3>Improved efficiency through automation</h3>
+              <button type="button" class="btn btn-default">Know More</button>
+            </div>
+          </div>
+        </div>	 
+      </div>
+    </div>
+  </div>
+    </div>
+    <div id="section41" class="container-fluid">
         <center>
             <h1>&nbsp;Contact Us&nbsp;</h1>
         </center>
         <div class="row">
             <div class="col-xs-4 col-lg-4">
                 <center>
+                    
                     <span class="glyphicon glyphicon-envelope fa-3x"></span>
                     <h3>occibinong@gmail.com</h3>
                 </center>
@@ -273,15 +394,12 @@
                     <h3>No Telp</h3>
                 </center>
             </div>
+                <center>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15857.340208242265!2d106.82578011434438!3d-6.479180225005904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1e75f10a029%3A0x7d08796b7436bd31!2sOC+English+Course!5e0!3m2!1sid!2sid!4v1527408632560" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </center>
         </div>
     </div>
-    <div id="section41" class="container-fluid">
-        <center>
-            <h1>&nbsp;Courses&nbsp;</h1>
-        </center>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    </div>
+    
     <div id="section42" class="container-fluid">
         <center>
             <h1>&nbsp;Testimoni&nbsp;</h1>
@@ -320,8 +438,15 @@
                     scrollTop: $(hash).offset().top
                 }, 800, function() {
 
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+               
+                    //flip card
+                    
+                $('.flip').hover(function(){
+                $(this).find('.card').toggleClass('flipped');
+
+                    });
                 });
             } // End if
         });
