@@ -5,33 +5,59 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OC Profile</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/fixlogooc.ico" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800i" rel="stylesheet">
-    <link href="fonts/Bangers-Regular.ttf" type="text/css" rel="stylesheet">
-    <link href="fonts/OpenSans-Regular.ttf" type="text/css" rel="stylesheet">
+    <!--<link href="fonts/Bangers-Regular.ttf" type="text/css" rel="stylesheet">
+    <link href="fonts/OpenSans-Regular.ttf" type="text/css" rel="stylesheet">-->
 
     <!-- NAVBAR INTERNAL CSS -->
     <style>
         body {
-            position: relative;
             font-family: 'Open Sans', sans-serif;
         }
 
         h1 {
-            text-decoration: underline;
             font-family: 'Bangers', cursive;
+            color: #fff;
+        }
+
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 550;
+
+        }
+
+        h3 {
+            font-family: 'Open Sans', sans-serif;
         }
 
         p {
-            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
 
         nav {
             font-size: 20px;
             font-family: 'Bangers', cursive;
+
+        }
+
+        .navbar-brand {
+            padding: 0px;
+        }
+
+        .navbar-brand>img {
+            height: 130%;
+            padding: 5px;
+            width: auto;
         }
 
         .row {
@@ -44,50 +70,91 @@
             height: auto;
             color: #fff;
             text-shadow: 2px 2px rgba( 34, 32, 32, 0.325);
-            background-color: #1E88E5;
+            background-color: #666666;
         }
 
         #section2 {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            height: auto;
+            position: relative;
+            text-align: justify;
+            width: 100%;
+            height: 100%;
+            color: #404040;
+            background-color: #f2f2f2;
+            font-size: 1em;
+            font-weight: 400;
+            padding: 6% 0 6% 0;
+
+        }
+
+        #section21 {
+            position: relative;
+            text-align: justify;
+            width: 100%;
+            height: 100%;
             color: #fff;
+            font-size: 18px;
+            font-weight: 400;
             text-shadow: 2px 2px rgba( 34, 32, 32, 0.325);
-            background-color: #673ab7;
-            font-size: 20px;
+            padding: 7% 0 7% 0;
+            background: url(img/bgbelajar1.png) center center no-repeat;
+            background-size: cover;
 
         }
 
         #section3 {
-            padding-top: 20px;
+            padding-top: 30px;
             padding-bottom: 20px;
             height: auto;
-            color: #fff;
-            text-shadow: 2px 2px rgba( 34, 32, 32, 0.325);
-            background-color: #ff9800;
+            color: #404040;
+            background-color: #666666;
         }
 
         #section41 {
-            padding-top: 20px;
+            padding-top: 30px;
             padding-bottom: 20px;
             height: auto;
-            color: #fff;
-            text-shadow: 2px 2px rgba( 34, 32, 32, 0.325);
-            background-color: #ff0000;
+            color: #404040;
+            background-color: #f2f2f2;
         }
 
         #section42 {
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding-top: 30px;
+            padding-bottom: 40px;
             height: auto;
             color: #fff;
             text-shadow: 2px 2px rgba( 34, 32, 32, 0.325);
-            background-color: #ff66ff;
+            background-color: #666666;
+            font-size: 1em;
+            font-weight: 400;
+
+        }
+
+        #footer {
+            bottom: 0;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            height: auto;
+            color: #404040;
+            background-color: #f2f2f2;
         }
 
         @media (min-width: 1200px) {
             .container {
                 max-width: 940px;
+            }
+        }
+        
+        @media (max-width: 375px) {
+            h3{
+                font-size: 15px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+            }
+            .carousel-caption{
+                bottom: 0;
+            }
+            .card .theFront{
+                margin-left: -6vw;
             }
         }
 
@@ -100,6 +167,7 @@
             position: relative;
             width: 300px;
             height: 250px;
+            margin: 10px;
         }
 
         .theFront {
@@ -126,10 +194,10 @@
             transform-style: preserve-3d;
             backface-visibility: hidden;
             transition: all .5s ease-in-out;
-            background: #d2cfcf;
+            background: #fff;
             width: 100%;
             height: 100%;
-            border-radius: 10px;
+            border-radius: 2px;
         }
 
         .card.flip .theFront {
@@ -157,6 +225,39 @@
             border-radius: 10px;
         }
 
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+      /*  .map-responsive {
+            overflow: hidden;
+            padding-bottom: 30%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 70%;
+            width: 100%;
+            position: absolute;
+        }
+*/
     </style>
     <!-- NAVBAR INTERNAL CSS -->
 </head>
@@ -164,7 +265,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" style="padding: 5px">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -172,7 +273,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        	
       </button>
-                <a class="navbar-brand" href="index.html" style="text-decoration:underline;font-size:30px;">OC PROFILE</a>
+                <a class="navbar-brand" href="#" style=""><img src="img/fixlogooc.png" alt="OC Course" style="width:89px; height:55px;">
+                </a>
             </div>
             <div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -197,8 +299,7 @@
     <!-- MAIN BODY -->
     <div id="section1" class="container-fluid">
         <center>
-            <h1>&nbsp;HOME&nbsp;</h1>
-            <p><i class="fa fa-quote-left"></i> TAGLINE <i class="fa fa-quote-right"></i></p>
+            <h1>&nbsp;Halo Selamat Datang!!!&nbsp;</h1>
         </center>
         <div class="container">
             <div id="myCarousel" class="carousel slide container" data-ride="carousel" style="position:relative;z-index:1;">
@@ -218,10 +319,8 @@
                     <div class="item active">
                         <img src="img/Slider/display1.jpg" class="img-thumbnail" alt="Display 1" style="width:100%; height:auto;">
                         <div class="carousel-caption">
-                            <div class="box">
-                                <h4>Belajar Bahasa Inggris di Cibinong</h4>
+                                <h3>Les Bahasa Inggris Cibinong</h3>
                                 <p>Dari mulai siswa, mahasiswa dan umum bisa belajar bersama.</p>
-                            </div>
                         </div>
                     </div>
 
@@ -289,7 +388,7 @@
             <h3>Mengapa Kursus di OC ?</h3>
             <p> Didirikan untuk mendidik generasi , Menghapus <br>stigma bahwa bahasa Inggris itu tidak lah sulit melainkan sangat <br> menyenangkan dan terlebih biaya yang sangat terjangkau.</p>
             <div id="myNavbar">
-                <a href="#section2" class="btn btn-info btn-lg">
+                <a href="#section2" class="btn btn-primary btn-lg">
                     Pelajari Selengkapnya  <span class="glyphicon glyphicon-chevron-down"></span>
                 </a>
             </div>
@@ -298,74 +397,86 @@
 
     <div id="section2" class="container-fluid">
         <center>
-            <h1>&nbsp;Profile&nbsp;</h1>
+            <img src="img/fixlogooc.png" width="350" height="210">
         </center>
-        <div class="row">
-            <div class="col-xs-6 col-lg-6">
-                <p>OC merupakan sebuah tempat kursus bahasa Inggris yang dibentuk pada tahun 2008.</p>
-                <p>Sang pemilik merupakan tamatan S1 Sastra Inggris. Tujuan di dirikannya OC adalah untuk mendidik generasi mulai dari SD, SMP, SMU/SMK, Mahasiswa bahkan jenjang Karyawan maupun Kalangan Umum yang berminat terhadap bahasa Inggris agar mampu bersaing keahlian khususnya keahlian berbahasa asing (bahasa Inggris) dan juga menghapus stigma bahwa bahasa Inggris itu tidak lah sulit melainkan sangat menyenangkan dan terlebih biaya kursus di OC sangat terjangkau.</p>
-            </div>
-            <div class="col-xs-6 col-lg-6">
-                <p>Metode pengajaran dan pembelajaran OC bersifat frequent interactive dimana interaksi antara siswa terhadap guru tidak ada jarak, siswa dibikin senyaman mungkin dalam mendalami ilmu bahasa Inggris dengan menggunakan bahasa penyampaian yang mudah dipahami oleh siswa</p>
-
-                <p>Materi bahasa Inggris yang diberikan OC pun mengikuti tuntutan zaman dan sangat bermanfaat bagi masa depan. Komponen - komponen materi tersebut terdiri dari Speaking, Reading, Writing, Listening dan Grammar sehingga siswa yang belajar di OC mendapat ilmu penuh tentang bahasa Inggris.</p>
-            </div>
+        <br>
+        <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+        <p>OC merupakan sebuah tempat kursus bahasa Inggris yang dibentuk pada tahun 2008. Sang pemilik merupakan tamatan S1 Sastra Inggris. Tujuan di dirikannya OC adalah untuk mendidik generasi mulai dari SD, SMP, SMU/SMK, Mahasiswa bahkan jenjang Karyawan maupun Kalangan Umum yang berminat terhadap bahasa Inggris agar mampu bersaing keahlian khususnya keahlian berbahasa asing (bahasa Inggris) dan juga menghapus stigma bahwa bahasa Inggris itu tidak lah sulit melainkan sangat menyenangkan dan terlebih biaya kursus di OC sangat terjangkau.</p>
         </div>
-    </div>
 
+    </div>
+    <div id="section21" class="container-fluid">
+           <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+               <center><h2><span class="glyphicon glyphicon-user"></span> Sistem Pengajaran yang Terbaik untuk Anda</h2></center>
+            <br>
+            <p>
+                Metode pengajaran dan pembelajaran OC bersifat frequent interactive dimana interaksi antara siswa terhadap guru tidak ada jarak, siswa dibuat senyaman mungkin dalam mendalami ilmu bahasa Inggris dengan menggunakan bahasa penyampaian yang mudah dipahami oleh siswa.</p>
+            </div>
+            <br><br>
+             <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+                 <center><h2><span class="glyphicon glyphicon-education"></span> Materi yang Terbaik untuk Anda</h2></center>
+            <br>
+            <p>
+                Materi bahasa Inggris yang diberikan OC pun mengikuti tuntutan zaman dan sangat bermanfaat bagi masa depan. Komponen - komponen materi tersebut terdiri dari <b>Speaking, Reading, Writing, Listening dan Grammar</b> sehingga siswa yang belajar di OC mendapat ilmu penuh tentang bahasa Inggris.</p>
+            </div>
+
+    </div>
     <div id="section3" class="container-fluid">
         <center>
             <h1>&nbsp;Courses&nbsp;</h1>
         </center>
-        <div class="row">
-            <div class="col-sm-3 col-lg-3">
+        <div class="row center-block">
+            <div class="col-xs-12 col-sm-6 col-lg-3">
                 <div class="hover card">
                     <div class="theFront">
                         <img src="img/1.jpg" alt="Grammar" class="img-responsive">
                     </div>
                     <div class="theBack">
                         <center>
-                            <h3>Grammar</h3>
-                            <p style="text-align: justify;padding:10px;">Program ini ditujukan untuk peserta didik yang akan meningkatkan kemampuan peserta dalam membaca, menulis serta didukung oleh kemampuan memahami penggunaan tata bahasa dan penguasaan kosakata dalam bahasa inggris.</p>
+                            <h3><b>Grammar</b></h3>
+                            <h4 style="text-shadow: none;text-align: center;padding:10px;">Program ini ditujukan untuk peserta didik yang akan meningkatkan kemampuan peserta dalam membaca, menulis serta didukung oleh kemampuan memahami penggunaan tata bahasa dan penguasaan kosakata dalam bahasa inggris.</h4>
                         </center>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 col-lg-3">
+
+            <div class="col-xs-12 col-sm-6 col-lg-3">
                 <div class="hover card">
                     <div class="theFront">
                         <img src="img/2.jpg" alt="Conver" class="img-responsive">
                     </div>
                     <div class="theBack">
                         <center>
-                            <h3>Conversation</h3>
-                            <p style="text-align: justify;padding:10px;">Program ini ditujukan untuk semua kalangan yang ingin meningkatkan ketrampilan bercakap-cakap dalam bahasa Inggris. Peserta didik akan diberikan kesempatan untuk mengasah kecakapan lisan mereka melalui latihan komunikatif.</p>
+                            <h3><b>Conversation</b></h3>
+                            <h4 style="text-shadow: none;text-align: center;padding:10px;">Program ini ditujukan untuk semua kalangan yang ingin meningkatkan ketrampilan bercakap-cakap dalam bahasa Inggris. Peserta didik akan diberikan kesempatan untuk mengasah kecakapan lisan mereka melalui latihan komunikatif.</h4>
                         </center>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 col-lg-3">
+
+            <div class="col-xs-12 col-sm-6 col-lg-3">
                 <div class="hover card">
                     <div class="theFront">
                         <img src="img/3.jpg" alt="TOEFL" class="img-responsive">
                     </div>
                     <div class="theBack">
                         <center>
-                            <h3>TOEFL</h3>
-                            <p style="text-align: justify;padding:10px;">Program yang dirancang untuk anda yang perlu meningkatkan nilai TOEFL baik untuk keperluan studi maupun pekerjaan. Dalam pelatihan ini peserta mendapatkan serangkaian tes latihan, strategi dan juga kiat-kiat khusus dalam menangani soal TOEFL.</p>
+                            <h3><b>TOEFL</b></h3>
+                            <h4 style="text-shadow: none;text-align: center;padding:10px;">Program yang dirancang untuk anda yang perlu meningkatkan nilai TOEFL baik untuk keperluan studi maupun pekerjaan. Dalam pelatihan ini peserta mendapatkan serangkaian tes latihan, strategi dan juga kiat-kiat khusus dalam menangani soal TOEFL.</h4>
                         </center>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 col-lg-3">
+
+            <div class="col-xs-12 col-sm-6 col-lg-3">
                 <div class="hover card">
                     <div class="theFront">
                         <img src="img/4.jpg" alt="TOEIC" class="img-responsive">
                     </div>
                     <div class="theBack">
                         <center>
-                            <h3>TOEIC</h3>
-                            <p style="text-align: justify;padding:10px;">Program yang dirancang untuk anda yang perlu meningkatkan nilai TOEIC untuk keperluan pekerjaan. Dalam pelatihan ini peserta mendapatkan serangkaian tes latihan, strategi dan juga kiat-kiat khusus dalam menangani soal TOEIC.</p>
+                            <h3><b>TOEIC</b></h3>
+                            <h4 style="text-shadow: none; text-align: center;padding:10px;">Program yang dirancang untuk anda yang perlu meningkatkan nilai TOEIC untuk keperluan pekerjaan. Dalam pelatihan ini peserta mendapatkan serangkaian tes latihan, strategi dan juga kiat-kiat khusus dalam menangani soal TOEIC.</h4>
                         </center>
                     </div>
                 </div>
@@ -373,59 +484,85 @@
         </div>
     </div>
     <div id="section41" class="container-fluid">
-        <center>
-            <h1>&nbsp;Contact Us&nbsp;</h1>
-        </center>
-        <div class="row">
-            <div class="col-xs-4 col-lg-4">
+        <div class="row well well-sm">
+            <div class="col-xs-12 col-sm-6 col-lg-6">
                 <center>
-
                     <span class="glyphicon glyphicon-envelope fa-3x"></span>
                     <h3>occibinong@gmail.com</h3>
                 </center>
             </div>
-            <div class="col-xs-4 col-lg-4">
-                <center>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15857.340208242265!2d106.82578011434438!3d-6.479180225005904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1e75f10a029%3A0x7d08796b7436bd31!2sOC+English+Course!5e0!3m2!1sid!2sid!4v1527408632560" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
-                </center>
-            </div>
-            <div class="col-xs-4 col-lg-4">
+            <div class="col-xs-12 col-sm-6 col-lg-6">
                 <center>
                     <span class="glyphicon glyphicon-earphone fa-3x"></span>
                     <h3>0822-6222-486</h3>
                 </center>
             </div>
         </div>
+        <div class="rows">
+            <div class="col-xs-12 col-lg-12" style="box-shadow: 3px 3px 5px 6px #ccc;">
+                    <center>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15857.340208242265!2d106.82578011434438!3d-6.479180225005904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1e75f10a029%3A0x7d08796b7436bd31!2sOC+English+Course!5e0!3m2!1sid!2sid!4v1527408632560" width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" allowfullscreen></iframe>
+                    </center>
+            </div>
+        </div>
     </div>
 
     <div id="section42" class="container-fluid">
         <center>
-            <h1>&nbsp;Testimoni&nbsp;</h1>
+            <h1>&nbsp;"Apa kata mereka tentang OC ???"&nbsp;</h1>
         </center>
         <div class="rows">
-            <div class="col-xs-4 col-lg-4">
-                <img class="img-responsive center-block img-thumbnail" src="img/testi1Rifka.jpg" style="width:50%;height:50%;box-shadow: 10px 10px 5px grey;" alt="Testi1">
+            <div class="col-6 col-md-4">
+                <img class="img-responsive center-block img-thumbnail" src="img/testi1Rifka.jpg" style="width:50%;height:50%;" alt="Testi1">
                 <blockquote>
                     <p>Saya mendapat rekomendasi dari kakak saya untuk belajar di OC. Saya mendapat banyak ilmu bahasa inggris selama belajar di OC, materinya mudah dipahami. Cara pengajaranya memberikan penjelasan yang sangat seru dan menyenangkan. Dari segi biaya, OC sangat terjangkau biayanya. Yuk gabung di OC, apalagi sekarang jamannya sudah menuntut kita harus bisa berbahasa inggris... OC the best</p>
-                    <footer style="text-shadow: none">Rifka Fauziah (Mahasiswi Univ.Pakuan Bogor Fakultas Hukum)</footer>
+                    <footer style="color:#d9d9d9;text-shadow: none">Rifka Fauziah (Mahasiswi Univ.Pakuan Bogor Fakultas Hukum)</footer>
                 </blockquote>
             </div>
-            <div class="col-xs-4 col-lg-4">
-                <img class="img-responsive center-block img-thumbnail" src="img/testi2Revita.jpg" style="width:50%;height:50%;box-shadow: 10px 10px 5px grey;" alt="Testi2">
+            <div class="col-6 col-md-4">
+                <img class="img-responsive center-block img-thumbnail" src="img/testi2Revita.jpg" style="width:50%;height:50%;" alt="Testi2">
                 <blockquote>
                     <p>Saya kursus bahasa inggris di OC karena mendapat rekomendasi dari teman dan saya memang sedang mencari tempat khusus bahasa inggris terdekat. Pelajaran yang saya dapat selama belajar di OC adalah saya diajarkan ejaan bahasa inggris yang benar, lebih mengerti lagi tentang bahasa inggris sebab pelajaran bahasa inggris di sekolah sulit saya mengerti sebab guru saya tidak memberi pengarahan dulu melainkan lebih banyak menggerjakan soal soal. Dari segi biaya sangat terjangkau. OC biaya murah tapi kualitas tidak murahan... Ayo berlajar di OC sama seperti saya.</p>
-                    <footer style="text-shadow: none">Revita Putri Maharani (Siswi SMA Citra Nusa - Cibinong)</footer>
+                    <footer style="color:#d9d9d9;text-shadow: none">Revita Putri Maharani (Siswi SMA Citra Nusa - Cibinong)</footer>
                 </blockquote>
             </div>
-            <div class="col-xs-4 col-lg-4">
-                <img class="img-responsive center-block img-thumbnail" src="img/testi3Nia.jpeg" style="width:50%;height:50%;box-shadow: 10px 10px 5px grey;" alt="Testi3">
+            <div class="col-6 col-md-4">
+                <img class="img-responsive center-block img-thumbnail" src="img/testi3Nia.jpeg" style="width:50%;height:50%;" alt="Testi3">
                 <blockquote>
                     <p>Saya memilih OC karna lokasi yang dekat dan biaya kursus bahasa inggrisnya yang sangat terjangkau bila dibandingkan tempat kursus bahasa inggris serupa. Selama belajar di OC saya mudah memahami materi bahasa inggris yang di berikan, sebab cara pengajarnya memberikan pelajaran mudah dimengerti. Bagi siapapun yang ingin belajar dan lancar berbahasa inggris, kalian bisa memilih OC.</p>
-                    <footer style="text-shadow: none">Nia Safira (Mahasiswi BSI cabang Margonda-Depok)</footer>
+                    <footer style="color:#d9d9d9;text-shadow: none">Nia Safira (Mahasiswi BSI cabang Margonda-Depok)</footer>
                 </blockquote>
             </div>
         </div>
+        <hr>
+        <div class="rows">
+            <div class="col-6 col-md-6">
+                <div class="video-container well">
+
+                    <center>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DiYmMvQFzME" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                    </center>
+                </div>
+            </div>
+            <p &ensp></p>
+            <div class="col-6 col-md-6">
+                <div class="video-container well">
+
+                    <center>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/UqiFELeDIbI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>>
+                    </center>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer id="footer" class="container-fluid">
+        <center>
+            <h3>Copyright &copy; OC</h3>
+        </center>
+
+    </footer>
     <!-- MAIN BODY -->
 
 </body>
@@ -476,6 +613,9 @@
         }, function() {
             $(this).removeClass('flip');
         });
+        $('.hover').click(function(){
+            $(this).toggleClass('flip');
+        })
     });
 
 </script>
